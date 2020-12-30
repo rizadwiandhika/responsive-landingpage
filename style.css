@@ -61,7 +61,6 @@ a {
 }
 .wrapper.slide {
 	background-color: rgba(0, 0, 0, 0.6);
-	height: 100%;
 }
 
 
@@ -272,6 +271,11 @@ nav .hamburger .bar {
 	gap: 20px;
 }
 
+.information.slide{
+	z-index: -1;
+	position: relative;
+}
+
 .info {
 	position: relative;
 	width: 360px;
@@ -327,6 +331,10 @@ nav .hamburger .bar {
 	align-items: flex-start;
 	gap: 20px;
 }
+.recent-updates.slide{
+	position: relative;
+	z-index: -1;
+}
 
 .card {
 	position: relative;
@@ -381,6 +389,10 @@ nav .hamburger .bar {
 	background-color: black;
 	gap: 20px;
 	color: #fff;
+}
+.footer.slide {
+	z-index: -1;
+	position: relative;
 }
 
 .footer .contact {

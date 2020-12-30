@@ -1,6 +1,8 @@
 // Navbar
 const ulContainer = document.querySelector('nav .ul-container')
 const nav = document.querySelector('nav')
+const wrapper = document.body.firstElementChild
+console.log(wrapper.lastElementChild.previousElementSibling.previousElementSibling)
 
 nav.addEventListener('click', (e) => {
     console.log(e.target)
@@ -11,6 +13,9 @@ nav.addEventListener('click', (e) => {
         document.body.classList.toggle('slide')
         document.body.firstElementChild.classList.toggle('slide')
         nav.nextElementSibling.classList.toggle('slide')
+        nav.nextElementSibling.nextElementSibling.nextElementSibling.classList.toggle('slide')
+        wrapper.lastElementChild.previousElementSibling.classList.toggle('slide')
+        wrapper.lastElementChild.previousElementSibling.previousElementSibling.classList.toggle('slide')
     }
 })
 // Akhir -  Navbar
